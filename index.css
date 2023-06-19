@@ -313,9 +313,7 @@ button:hover {
     width: 600px;
     margin-left: 52px;
   }
-  nav {
-    display: unset;
-  }
+
   .wrapper::before {
     position: none;
     content: "";
@@ -469,9 +467,13 @@ button:hover {
   iframe {
     width: 1000px;
     height: 400px;
-  } 
-} 
-@media screen and (max-width: 500px) {
+  }
+}
+@media screen and (max-width: 800px) {
   .container {
     min-width: 111vh;
   }
+  nav {
+    margin-left: 15px;
+  }
+}
