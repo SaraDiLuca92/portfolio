@@ -469,5 +469,8 @@ button:hover {
   iframe {
     width: 1000px;
     height: 400px;
+  } @media screen and (max-width: 500px) {
+  .container {
+    min-width: 111vh;
   }
 }
