@@ -1,0 +1,473 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;0,900;1,300;1,400;1,600;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+body {
+  overflow-x: hidden;
+}
+.container {
+  margin-left: 100px;
+  width: 100%;
+  min-width: 100vh;
+}
+nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  height: 80px;
+  z-index: 111;
+
+  line-height: 80px;
+}
+.logo {
+  display: flex;
+  font-size: 40px;
+  font-weight: 800;
+  color: #3d535f;
+  letter-spacing: 3px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+b {
+  font-size: 70px;
+  color: #7f00ff;
+}
+.navItems {
+  display: flex;
+}
+.navItems li {
+  list-style: none;
+  margin: 0 15px;
+}
+
+.navItems li a {
+  font-size: 25px;
+  color: #3d535f;
+  letter-spacing: 3px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+.navItems li:hover a,
+.links a:hover {
+  color: #7f00ff;
+}
+.links a {
+  font-size: 30px;
+  color: #3d535f;
+  margin: 25px 10px;
+}
+.wrapper {
+  display: flex;
+  width: 100%;
+  height: calc(100vh - 80px);
+  justify-content: center;
+  align-items: center;
+  padding: 0 10%;
+  overflow: hidden;
+}
+.wrapper::before {
+  position: absolute;
+  content: "";
+  height: 600px;
+  width: 600px;
+  border-radius: 50%;
+  left: -12%;
+  top: 40%;
+  background: linear-gradient(45deg, #7f00ff, pink);
+  animation: object1 6s linear infinite;
+}
+.cols {
+  width: 50%;
+}
+.topline {
+  display: block;
+  position: relative;
+  font-size: 35px;
+  letter-spacing: 5px;
+  color: #3d535f;
+}
+.topline::after {
+  position: absolute;
+  content: "";
+  height: 4px;
+  width: 45px;
+  bottom: 10px;
+  background-color: #7f00ff;
+}
+h1 {
+  display: block;
+  font-size: 7em;
+  font-weight: 900;
+  color: #3d535f;
+}
+.multiText {
+  color: #7f00ff;
+  text-transform: capitalize;
+}
+p {
+  display: block;
+  width: 90%;
+  font-size: 1.2em;
+}
+.btns {
+  width: 100%;
+  position: relative;
+  left: 150px;
+}
+button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-size: 25px;
+  font-weight: 400;
+  color: #fff;
+  background-color: #3d535f;
+  padding: 8px 14px;
+  margin: 40px 5px;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  box-shadow: 0 15px 10px rgba(0, 0, 0, 0.4);
+}
+button:hover {
+  background-color: #7f00ff;
+}
+.imgbox {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.imgbox img {
+  position: relative;
+  height: 100%;
+  width: calc(130% - 80px);
+  top: -100px;
+  right: 50px;
+  transform: rotateY(180deg);
+  animation: animateUser 4s linear infinite;
+}
+@keyframes animateUser {
+  50% {
+    right: 30px;
+    top: -90px;
+  }
+}
+.imgbox #splash {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-35deg);
+  width: 160%;
+  filter: saturate(200%);
+  animation: animate 4s linear infinite;
+}
+@keyframes animate {
+  50% {
+    top: 49%;
+    left: 51%;
+    width: 155%;
+  }
+}
+
+.cols0 {
+  width: 60%;
+  z-index: 5;
+}
+.wrapper::after {
+  position: absolute;
+  content: "";
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  left: 35%;
+  top: 12%;
+  background: linear-gradient(45deg, #7f00ff, pink);
+  animation: object2 6s linear infinite;
+}
+@keyframes object1 {
+  50% {
+    left: -13%;
+    top: 41%;
+  }
+}
+@keyframes object2 {
+  50% {
+    left: 35%;
+    top: 10%;
+  }
+}
+.secret {
+  text-align: center;
+}
+.cols1 {
+  z-index: 5;
+}
+.secreta {
+  font-size: xxx-large;
+  text-align: end;
+  font-weight: 900;
+  text-decoration: none;
+}
+.secreta:hover {
+  color: #3d535f;
+}
+.pp {
+  color: #3d535f;
+}
+.secretoo {
+  color: #3d535f;
+}
+.secretoo:hover {
+  color: #7f00ff;
+}
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: rotate(12deg);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.moving-image {
+  animation: slide 5s infinite; /* 5s indica la durata dell'animazione */
+}
+@media screen and (max-width: 3000px) {
+  .moving-image {
+    width: 600px;
+    margin-top: 95px;
+  }
+  .cols {
+    margin-top: 100px;
+  }
+  .cols h1 {
+    font-size: xxx-large;
+  }
+  .wrapper::before {
+    position: absolute;
+    content: "";
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    left: -10%;
+    top: 49%;
+    background: linear-gradient(45deg, #7f00ff, pink);
+    animation: object1 6s linear infinite;
+  }
+  @keyframes object1 {
+    50% {
+      left: -13%;
+      top: 41%;
+    }
+  }
+  .btns {
+    position: unset;
+  }
+
+  .wrappero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .wrappero h1 {
+    font-size: 80px;
+    margin-top: 50px;
+  }
+  .wrappero p {
+    font-size: 60px;
+    width: 600px;
+  }
+  .wrappero::before {
+    position: absolute;
+    content: "";
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+
+    left: -10%;
+    top: 49%;
+    background: linear-gradient(45deg, #7f00ff, pink);
+    animation: object11 6s linear infinite;
+  }
+  @keyframes object11 {
+    50% {
+      left: 10%;
+      top: 10%;
+    }
+  }
+  .secretoo {
+    font-size: 20px;
+    font-weight: 900;
+    text-decoration: none;
+  }
+}
+@media screen and (max-width: 1400px) {
+  img {
+    display: inline-table;
+    width: 600px;
+    margin-left: 52px;
+  }
+  nav {
+    display: unset;
+  }
+  .wrapper::before {
+    position: none;
+    content: "";
+    height: none;
+    width: none;
+    border-radius: 50%;
+    left: -10%;
+    top: 49%;
+    background: none;
+    animation: none;
+  }
+  @keyframes object1 {
+    50% {
+      left: none;
+      top: none;
+    }
+  }
+  .wrapper::after {
+    position: none;
+    content: "";
+    height: none;
+    width: none;
+    border-radius: 50%;
+    left: -10%;
+    top: 49%;
+    background: none;
+    animation: none;
+  }
+  .wrapper {
+    margin-top: 10px;
+    display: unset;
+    margin-left: 60px;
+    text-align: center;
+  }
+  .cols {
+    margin-top: none;
+    width: auto;
+  }
+  .topline {
+    display: none;
+  }
+  .logo {
+    justify-content: space-evenly;
+  }
+  p {
+    width: auto;
+  }
+  h1 {
+    text-align: center;
+  }
+  .container {
+    width: auto;
+    margin-left: auto;
+  }
+  .navItems {
+    display: flex;
+    justify-content: space-around;
+  }
+  .logo {
+    text-align: center;
+    display: block;
+  }
+  .ph {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 90px;
+  }
+
+  .ph img {
+    margin: auto;
+    width: 1000px;
+    margin-top: 10px;
+  }
+  .secret {
+    font-size: xxx-large;
+  }
+
+  .secreta {
+    margin: 0px !important;
+  }
+}
+@media screen and (min-width: 1401px) {
+  .wrapper {
+    margin-top: 40px;
+  }
+  .wrappero {
+    margin-top: 10px;
+  }
+}
+@media screen and (min-width: 700px) {
+  .wrappero {
+    margin-top: 90px;
+    margin-left: 0px;
+  }
+  .moving-image {
+    align-items: center;
+  }
+}
+.bodyp {
+  margin-left: 0px !important;
+}
+.wra {
+  margin-top: 200px;
+  text-align: center;
+}
+.wra a {
+  text-align: center;
+}
+.ph {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 90px;
+}
+
+.ph img {
+  margin: auto;
+  width: 1000px;
+  margin-top: 10px;
+}
+.secret {
+  font-size: xxx-large;
+}
+
+.secreta {
+  margin: 0px !important;
+}
+.container {
+  margin-left: 0px !important;
+}
+@media screen and (min-width: 700px) and (max-width: 1200px) {
+  .moving-image {
+  }
+}
+@media screen and (min-width: 2000px) and (max-width: 3000px) {
+  .wrappero {
+    margin-top: 10px;
+  }
+  iframe {
+    width: 1300px;
+    height: 900px;
+  }
+}
+@media screen and (min-width: 1000px) and (max-width: 1800px) {
+  .wrappero {
+    margin-top: 10px;
+  }
+  iframe {
+    width: 1000px;
+    height: 400px;
+  }
+}

@@ -4,9 +4,76 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Londrina+Outline&family=Qwigley&family=Rubik+Glitch&family=Square+Peg&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Raleway+Dots&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./font-awesome.css" />
+    <link rel="stylesheet" href="./font-awesome.min.css" />
+
+    <title>Sara Di Luca</title>
   </head>
   <body>
-    <h1>ciao</h1>
+    <div class="container">
+      <nav>
+        <div class="logo">Sara Di Luca<b>.</b></div>
+        <ul class="navItems">
+          <li><a href="#">home</a></li>
+          <li><a href="./projects.html">Projects</a></li>
+          <li><a href="./artcles.html">Articles</a></li>
+          <li><a href="./photos.html">Photos</a></li>
+        </ul>
+      </nav>
+      <div class="wrapper">
+        <div class="cols cols0">
+          <span class="topline">Hello</span>
+          <h1>I'm <span class="multiText"></span></h1>
+          <p class="pp">
+            Ciao, il mio nome è Sara Di Luca, classe '92 e questo è il mio sito
+            portfolio. Sono una Full Stack Developer con una spiccata passione
+            per il Front-end ed UI/UX Design. La mia cifra stilistica è un mix
+            tra Arte e Programmazione. <br />
+            Vai in projects, dai un occhio ai miei lavori, e ricorda che saranno
+            in continuo aggiornamento!
+          </p>
+          <div class="btns">
+            <a
+              href="./Copia di Pink Professional Business Administration Resume.pdf"
+              download="SaraDiLuca_cv.pdf"
+            >
+              <button>Download CV</button>
+            </a>
+            <a href="https://www.linkedin.com/in/sara-di-luca-34215b268/">
+              <button>Contact me</button></a
+            >
+          </div>
+        </div>
+        <div class="imagee">
+        <img
+          class="moving-image"
+          src="./Sara_Di_Luca_siluette_woman_artist_and_coder_purple_with_white__b2471051-8ec6-4e82-9ccd-0ed48875a83b.png"
+          alt=""
+        />
+      </div>
+    </div>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      var typingEffect = new Typed(".multiText", {
+        strings: ["Coder", "Full Stack", "Artist", "web designer"],
+        loop: true,
+        typeSpeed: 100,
+        backSpeed: 80,
+        backDelay: 1500,
+      });
+    </script>
   </body>
 </html>
